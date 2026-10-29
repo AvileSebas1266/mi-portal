@@ -1,0 +1,65 @@
+/* Variables CSS requeridas por la guía (:root) */
+:root {
+  --color-primario: #0d6efd;
+  --color-secundario: #0b5ed7;
+  --color-oscuro: #212529;
+  --color-fondo: #f8f9fa;
+  --color-texto: #333333;
+  --fuente-principal: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  color: var(--color-texto);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Banner Hero */
+.hero-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+              url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* Animación de las Cards de Bootstrap */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12) !important;
+}
+
+/* Estilos de las figuras en la Galería */
+figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+figure img {
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+figure:hover img {
+  transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+  background-color: var(--color-oscuro);
+  color: #ffffff;
+}
